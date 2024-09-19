@@ -21,18 +21,26 @@
     <maven-site-plugin.version>3.12.1</maven-site-plugin.version>
     <maven-project-info-reports-plugin.version>3.6.2</maven-project-info-reports-plugin.version>
     <commons-lang3.version>3.14.0</commons-lang3.version>
+    <lombok.version>1.18.32</lombok.version>
     <junit-jupiter-engine.version>5.10.2</junit-jupiter-engine.version>
     <mockito-junit-jupiter.version>5.7.0</mockito-junit-jupiter.version>
     <jacoco.version>0.8.11</jacoco.version>
   </properties>
   <dependencyManagement>
-	<dependencies>
+	  <dependencies>
       <dependency>
         <groupId>org.apache.commons</groupId>
         <artifactId>commons-lang3</artifactId>
         <version>${commons-lang3.version}</version>
       </dependency>
   
+      <dependency>
+        <groupId>org.projectlombok</groupId>
+        <artifactId>lombok</artifactId>
+        <version>${lombok.version}</version>
+        <scope>provided</scope>
+      </dependency>
+
       <dependency>
         <groupId>org.junit.jupiter</groupId>
         <artifactId>junit-jupiter-engine</artifactId>
