@@ -4,11 +4,11 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.nguiland</groupId>
-  <artifactId>lib-parent</artifactId>
+  <artifactId>nguiland-dependencies</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
-  <name>lib-parent</name>
-  <description>Parent pom providing dependency and plugin management for libraries</description>
+  <name>nguiland-dependencies</name>
+  <description>Parent pom providing dependency and plugin management</description>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.release>17</maven.compiler.release>
@@ -25,8 +25,12 @@
     <lombok.version>1.18.32</lombok.version>
     <junit-jupiter-engine.version>5.10.2</junit-jupiter-engine.version>
     <mockito-junit-jupiter.version>5.7.0</mockito-junit-jupiter.version>
-    <jacoco.version>0.8.11</jacoco.version>
+    <jacoco.version>0.8.13</jacoco.version>
     <jakarta.validation-api.version>3.0.2</jakarta.validation-api.version>
+    <spring-cloud.version>2023.0.1</spring-cloud.version>
+    <io-utils.version>0.0.1-SNAPSHOT</io-utils.version>
+    <web-oauth2.version>0.0.1-SNAPSHOT</web-oauth2.version>
+    <context.version>0.0.1-SNAPSHOT</context.version>
   </properties>
   <dependencyManagement>
     <dependencies>
@@ -47,6 +51,30 @@
         <groupId>jakarta.validation</groupId>
         <artifactId>jakarta.validation-api</artifactId>
         <version>${jakarta.validation-api.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-dependencies</artifactId>
+        <version>${spring-cloud.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+
+      <dependency>
+        <groupId>org.nguiland.io</groupId>
+        <artifactId>io-utils</artifactId>
+        <version>${io-utils.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.nguiland.security</groupId>
+        <artifactId>web-oauth2</artifactId>
+        <version>${web-oauth2.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.nguiland.context</groupId>
+        <artifactId>context</artifactId>
+        <version>${context.version}</version>
       </dependency>
 
       <dependency>
