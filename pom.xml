@@ -27,6 +27,7 @@
     <mockito-junit-jupiter.version>5.7.0</mockito-junit-jupiter.version>
     <jacoco.version>0.8.13</jacoco.version>
     <jakarta.validation-api.version>3.0.2</jakarta.validation-api.version>
+    <spring-boot.version>3.2.5</spring-boot.version>
     <spring-cloud.version>2023.0.1</spring-cloud.version>
     <io-utils.version>0.0.1-SNAPSHOT</io-utils.version>
     <web-oauth2.version>0.0.1-SNAPSHOT</web-oauth2.version>
@@ -51,6 +52,27 @@
         <groupId>jakarta.validation</groupId>
         <artifactId>jakarta.validation-api</artifactId>
         <version>${jakarta.validation-api.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-autoconfigure</artifactId>
+        <version>${spring-boot.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-web</artifactId>
+        <version>${spring-boot.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-oauth2-resource-server</artifactId>
+        <version>${spring-boot.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-hateoas</artifactId>
+        <version>${spring-boot.version}</version>
       </dependency>
 
       <dependency>
