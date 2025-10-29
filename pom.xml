@@ -29,9 +29,9 @@
     <jakarta.validation-api.version>3.0.2</jakarta.validation-api.version>
     <spring-boot.version>3.2.5</spring-boot.version>
     <spring-cloud.version>2023.0.1</spring-cloud.version>
-    <io-utils.version>0.0.1-SNAPSHOT</io-utils.version>
-    <web-oauth2.version>0.0.1-SNAPSHOT</web-oauth2.version>
-    <context.version>0.0.1-SNAPSHOT</context.version>
+    <nguiland-io-utils.version>0.0.1-SNAPSHOT</nguiland-io-utils.version>
+    <nguiland-web-oauth2.version>0.0.1-SNAPSHOT</nguiland-web-oauth2.version>
+    <nguiland-context.version>0.0.1-SNAPSHOT</nguiland-context.version>
   </properties>
   <dependencyManagement>
     <dependencies>
@@ -85,18 +85,18 @@
 
       <dependency>
         <groupId>org.nguiland.io</groupId>
-        <artifactId>io-utils</artifactId>
-        <version>${io-utils.version}</version>
+        <artifactId>nguiland-io-utils</artifactId>
+        <version>${nguiland-io-utils.version}</version>
       </dependency>
       <dependency>
         <groupId>org.nguiland.security</groupId>
-        <artifactId>web-oauth2</artifactId>
-        <version>${web-oauth2.version}</version>
+        <artifactId>nguiland-web-oauth2</artifactId>
+        <version>${nguiland-web-oauth2.version}</version>
       </dependency>
       <dependency>
         <groupId>org.nguiland.context</groupId>
-        <artifactId>context</artifactId>
-        <version>${context.version}</version>
+        <artifactId>nguiland-context</artifactId>
+        <version>${nguiland-context.version}</version>
       </dependency>
 
       <dependency>
