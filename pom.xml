@@ -32,6 +32,7 @@
     <nguiland-io-utils.version>0.0.1-SNAPSHOT</nguiland-io-utils.version>
     <nguiland-web-oauth2.version>0.0.1-SNAPSHOT</nguiland-web-oauth2.version>
     <nguiland-context.version>0.0.1-SNAPSHOT</nguiland-context.version>
+    <nguiland-rest-messages.version>0.0.1-SNAPSHOT</nguiland-rest-messages.version>
   </properties>
   <dependencyManagement>
     <dependencies>
@@ -102,6 +103,11 @@
         <groupId>org.nguiland.context</groupId>
         <artifactId>nguiland-context</artifactId>
         <version>${nguiland-context.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.nguiland.rest</groupId>
+        <artifactId>nguiland-rest-messages</artifactId>
+        <version>${nguiland-rest-messages.version}</version>
       </dependency>
 
       <dependency>
