@@ -27,6 +27,7 @@
     <mockito-junit-jupiter.version>5.7.0</mockito-junit-jupiter.version>
     <jacoco.version>0.8.13</jacoco.version>
     <jakarta.validation-api.version>3.0.2</jakarta.validation-api.version>
+    <hibernate-validator.version>8.0.1.Final</hibernate-validator.version>
     <spring-boot.version>3.2.5</spring-boot.version>
     <spring-cloud.version>2023.0.1</spring-cloud.version>
     <nguiland-io-utils.version>0.0.1-SNAPSHOT</nguiland-io-utils.version>
@@ -53,6 +54,12 @@
         <groupId>jakarta.validation</groupId>
         <artifactId>jakarta.validation-api</artifactId>
         <version>${jakarta.validation-api.version}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.hibernate</groupId>
+        <artifactId>hibernate-validator</artifactId>
+        <version>${hibernate-validator.version}</version>
       </dependency>
 
       <dependency>
