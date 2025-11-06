@@ -35,6 +35,7 @@
     <nguiland-web-oauth2.version>0.0.1-SNAPSHOT</nguiland-web-oauth2.version>
     <nguiland-context.version>0.0.1-SNAPSHOT</nguiland-context.version>
     <nguiland-rest-messages.version>0.0.1-SNAPSHOT</nguiland-rest-messages.version>
+    <nguiland-data-validation.version>0.0.1-SNAPSHOT</nguiland-data-validation.version>
   </properties>
   <dependencyManagement>
     <dependencies>
@@ -122,6 +123,11 @@
         <groupId>org.nguiland.rest</groupId>
         <artifactId>nguiland-rest-messages</artifactId>
         <version>${nguiland-rest-messages.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.nguiland.data</groupId>
+        <artifactId>nguiland-data-validation</artifactId>
+        <version>${nguiland-data-validation.version}</version>
       </dependency>
 
       <dependency>
