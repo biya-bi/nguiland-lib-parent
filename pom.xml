@@ -21,13 +21,7 @@
     <maven-deploy-plugin.version>3.1.0</maven-deploy-plugin.version>
     <maven-site-plugin.version>3.12.1</maven-site-plugin.version>
     <maven-project-info-reports-plugin.version>3.6.2</maven-project-info-reports-plugin.version>
-    <commons-lang3.version>3.14.0</commons-lang3.version>
-    <lombok.version>1.18.32</lombok.version>
-    <junit-jupiter-engine.version>5.10.2</junit-jupiter-engine.version>
-    <mockito-junit-jupiter.version>5.7.0</mockito-junit-jupiter.version>
     <jacoco.version>0.8.13</jacoco.version>
-    <jakarta.validation-api.version>3.0.2</jakarta.validation-api.version>
-    <hibernate-validator.version>8.0.1.Final</hibernate-validator.version>
     <spring-boot.version>3.2.5</spring-boot.version>
     <spring-cloud.version>2023.0.1</spring-cloud.version>
     <nguiland-io-utils.version>0.0.1-SNAPSHOT</nguiland-io-utils.version>
@@ -38,31 +32,6 @@
   </properties>
   <dependencyManagement>
     <dependencies>
-      <dependency>
-        <groupId>org.apache.commons</groupId>
-        <artifactId>commons-lang3</artifactId>
-        <version>${commons-lang3.version}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>org.projectlombok</groupId>
-        <artifactId>lombok</artifactId>
-        <version>${lombok.version}</version>
-        <scope>provided</scope>
-      </dependency>
-
-      <dependency>
-        <groupId>jakarta.validation</groupId>
-        <artifactId>jakarta.validation-api</artifactId>
-        <version>${jakarta.validation-api.version}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>org.hibernate</groupId>
-        <artifactId>hibernate-validator</artifactId>
-        <version>${hibernate-validator.version}</version>
-      </dependency>
-
       <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-dependencies</artifactId>
@@ -103,20 +72,6 @@
         <groupId>org.nguiland.data</groupId>
         <artifactId>nguiland-data-validation</artifactId>
         <version>${nguiland-data-validation.version}</version>
-      </dependency>
-
-      <dependency>
-        <groupId>org.junit.jupiter</groupId>
-        <artifactId>junit-jupiter-engine</artifactId>
-        <version>${junit-jupiter-engine.version}</version>
-        <scope>test</scope>
-      </dependency>
-
-      <dependency>
-        <groupId>org.mockito</groupId>
-        <artifactId>mockito-junit-jupiter</artifactId>
-        <version>${mockito-junit-jupiter.version}</version>
-        <scope>test</scope>
       </dependency>
     </dependencies>
   </dependencyManagement>
