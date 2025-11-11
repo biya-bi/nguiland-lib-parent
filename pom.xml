@@ -26,6 +26,7 @@
     <spring-cloud.version>2023.0.1</spring-cloud.version>
     <nguiland-io-utils.version>0.0.1-SNAPSHOT</nguiland-io-utils.version>
     <nguiland-web-oauth2.version>0.0.1-SNAPSHOT</nguiland-web-oauth2.version>
+    <nguiland-security-test.version>0.0.1-SNAPSHOT</nguiland-security-test.version>
     <nguiland-context.version>0.0.1-SNAPSHOT</nguiland-context.version>
     <nguiland-rest-messages.version>0.0.1-SNAPSHOT</nguiland-rest-messages.version>
     <nguiland-rest.version>0.0.1-SNAPSHOT</nguiland-rest.version>
@@ -58,6 +59,11 @@
         <groupId>org.nguiland.security</groupId>
         <artifactId>nguiland-web-oauth2</artifactId>
         <version>${nguiland-web-oauth2.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.nguiland.security</groupId>
+        <artifactId>nguiland-security-test</artifactId>
+        <version>${nguiland-security-test.version}</version>
       </dependency>
       <dependency>
         <groupId>org.nguiland.context</groupId>
