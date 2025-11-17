@@ -30,6 +30,7 @@
     <nguiland-rest.version>0.0.1-SNAPSHOT</nguiland-rest.version>
     <nguiland-data-validation.version>0.0.1-SNAPSHOT</nguiland-data-validation.version>
     <nguiland-orm.version>0.0.1-SNAPSHOT</nguiland-orm.version>
+    <nguiland-dto.version>0.0.1-SNAPSHOT</nguiland-dto.version>
   </properties>
   <dependencyManagement>
     <dependencies>
@@ -78,6 +79,11 @@
         <groupId>org.nguiland.data</groupId>
         <artifactId>nguiland-orm</artifactId>
         <version>${nguiland-orm.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.nguiland.data</groupId>
+        <artifactId>nguiland-dto</artifactId>
+        <version>${nguiland-dto.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
